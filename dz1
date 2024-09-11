@@ -1,0 +1,13 @@
+int main() {
+    int length, width;
+    std::cout<<"введите длину";
+    std::cin>>length;
+    std::cout<<"введите ширину";
+    std::cin>>width;
+    if (length <=0 || width <=0) {
+        std::cerr<<"длина и ширина должны быть положительными числами"<<std::endl;
+        return 1; 
+    }
+    int area = length*width;
+    std::cout<<"площадь прямоугльника"<<area<<std::endl;
+    return 0;
